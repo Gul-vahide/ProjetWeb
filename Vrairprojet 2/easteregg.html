@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<style type="text/css">
+	img{
+		width: 500px;
+		height: 300px;
+	}
+	body{
+		background-color: #F7F7F7;
+	}
+	#rocket{
+		display: none;
+		position: absolute;
+		top: 0%;
+		left: 90%;
+		-ms-transform: rotate(45deg); 
+	    -webkit-transform: rotate(45deg); 
+	    transform: rotate(45deg);
+	}
+	@keyframes blast-off {
+    0%   {left:0%; top:50%;}
+    100% {left:100%; top:50%;}
+	}
+	i{
+    animation-name: blast-off;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+	}
+
+	.space{
+  	font-size: 25px;
+  	cursor: pointer;
+	}
+</style>
+<head>
+	<title>Easter egg</title>
+</head>
+<body>
+	<a onclick="blastOff()" class="space"><img src="connexion.png"></a>
+	<i id="rocket" class="fas fa-rocket fa-3x"></i>
+
+</body>
+</html>
+<script type="text/javascript">
+	function blastOff() {
+  var rocket = document.getElementById("rocket");
+  if (rocket.style.display = "none") {
+    rocket.style.display = "block";
+  }
+  setTimeout(function(){document.getElementById("rocket"); if (rocket.style.display = "block") {
+    rocket.style.display = "none";
+  }}, 3000);
+}
+</script>

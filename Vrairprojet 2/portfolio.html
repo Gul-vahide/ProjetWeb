@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="gif" href="snake.gif" />
+	<title>Portfolio</title>
+	<style type="text/css">
+		
+		body {
+			background-image:url(tetris.jpg)
+
+		}
+		header
+            {
+              top : 0;
+              width: 100%;
+              display:flex;
+              flex-direction: row;
+              font-family: Chalkduster;
+              justify-content: space-around;
+              background: url('tetris.png');
+              padding:  5px;
+              right: 0;
+              align-items: center;
+              z-index:2;
+            }
+
+        header a
+{
+		    float: left;
+		    color: black;
+		    text-align: center;
+		    text-shadow: 9px -5px 4px rgba(53, 83, 136, 1);
+		    padding: 12px;
+		    text-decoration: none;
+		  	font-size: 18px;
+		    line-height: 25px;
+		    border-radius: 10px;
+}
+		header a.logo
+		{
+		    float:left;
+		    padding:0;
+		}
+
+
+		header a#page:hover
+		{
+		  background-color: #ddd;
+		}
+		#logo
+		{
+		  height:60px;
+		}
+
+		h1{
+			text-align: center;
+			color : #F0F8FF;
+			font-family:tahoma, geneva, sans-serif;
+			font-size: xx-large;
+			font-style: italic;
+			cursor: pointer;
+			text-shadow:0 0 2px #00e92c,0 0 30px #00e92c,0px 0px 5px #00e92c, 0 0 150px #00e92c;color:#00e92c;
+		}
+		#p1
+		{
+			text-align: center;
+			color : #F0F8FF;
+			width:600px;
+			margin-left: auto;
+  			margin-right: auto;
+  			position:absolute: 300px;
+  			font-family:tahoma, geneva, sans-serif;
+			font-size: large;
+			cursor: pointer;
+		}
+		h2{
+			color : #F0F8FF;
+			font-family:tahoma, geneva, sans-serif;
+			font-size: x-large;
+			font-style: italic;
+			cursor: pointer;
+		}
+		section
+		{
+   			-webkit-column-count:3;
+    		-moz-column-count: 3; 
+    		column-count: 3; 
+		}
+		h3{
+			text-align: center;
+			color : #F0F8FF;
+			font-family:tahoma, geneva, sans-serif;
+			font-size: large;
+			cursor: pointer;
+			text-shadow:   -1px -1px 0 #000,  
+    		1px -1px 0 #000,
+    		-1px 1px 0 #000,
+    		1px 1px 0 #000,
+     		1px 1px 2px #141414,
+     		1px 1px 3px #141414,
+     		1px 1px 5px #141414,
+     		1px 1px 7px #141414,
+     		1px 1px 10px #141414,
+     		1px 1px 12px #141414,
+     		1px 1px 18px #141414;color:#fff;
+		}
+		#gul
+		{
+			text-align: center;
+			font-family:tahoma, geneva, sans-serif;
+			font-size: medium;
+			border: groove 5px black;
+			padding: 8px;
+			border-radius: 0 10px 10px 10px;
+			background-image: url(tetris.png);
+			cursor: pointer;
+			text-shadow:   -1px -1px 0 #000,  
+    		1px -1px 0 #000,
+    		-1px 1px 0 #000,
+    		1px 1px 0 #000,
+     		1px 1px 2px #141414,
+     		1px 1px 3px #141414,
+     		1px 1px 5px #141414,
+     		1px 1px 7px #141414,
+     		1px 1px 10px #141414,
+     		1px 1px 12px #141414,
+     		1px 1px 18px #141414;color:#EAE232;
+		}
+		IMG.Gugu {
+    		display: block;
+   			 margin-left: auto;
+   			 margin-right: auto;
+   			 cursor: wait; 
+   		}
+		h4{
+			text-align: center;
+			color : #F0F8FF;
+			font-family:tahoma, geneva, sans-serif;
+			font-size: large;
+			cursor: pointer;
+			text-shadow:   -1px -1px 0 #000,  
+    		1px -1px 0 #000,
+    		-1px 1px 0 #000,
+    		1px 1px 0 #000,
+     		1px 1px 2px #141414,
+     		1px 1px 3px #141414,
+     		1px 1px 5px #141414,
+     		1px 1px 7px #141414,
+     		1px 1px 10px #141414,
+     		1px 1px 12px #141414,
+     		1px 1px 18px #141414;color:#fff;
+		}
+		#elisa
+		{
+			text-align: center;
+			font-family:tahoma, geneva, sans-serif;
+			font-size: medium;
+			border: groove 5px black;
+			padding: 8px;
+			border-radius: 0 10px 10px 10px;
+			background-image: url(tetris.png);
+			cursor: pointer;
+			text-shadow:   -1px -1px 0 #000,  
+    		1px -1px 0 #000,
+    		-1px 1px 0 #000,
+    		1px 1px 0 #000,
+     		1px 1px 2px #141414,
+     		1px 1px 3px #141414,
+     		1px 1px 5px #141414,
+     		1px 1px 7px #141414,
+     		1px 1px 10px #141414,
+     		1px 1px 12px #141414,
+     		1px 1px 18px #141414;color:#12CD4D;
+		}
+		#elisa2
+		{
+			color : white;
+			font-family:tahoma, geneva, sans-serif;
+			font-size: small;
+			cursor: pointer;
+		}
+		IMG.Elisa {
+    		display: block;
+   			 margin-left: auto;
+   			 margin-right: auto;
+   			 cursor: wait;
+   		}
+
+		h5{
+			text-align: center;
+			color : #F0F8FF;
+			font-family:tahoma, geneva, sans-serif;
+			font-size: large;
+			cursor: pointer;
+			text-shadow:   -1px -1px 0 #000,  
+    		1px -1px 0 #000,
+    		-1px 1px 0 #000,
+    		1px 1px 0 #000,
+     		1px 1px 2px #141414,
+     		1px 1px 3px #141414,
+     		1px 1px 5px #141414,
+     		1px 1px 7px #141414,
+     		1px 1px 10px #141414,
+     		1px 1px 12px #141414,
+     		1px 1px 18px #141414;color:#fff;
+		}
+		#capu
+		{
+			text-align: center;
+			font-family:tahoma, geneva, sans-serif;
+			font-size: medium;
+			border: groove 5px black;
+			padding: 8px;
+			border-radius: 0 10px 10px 10px;
+			background-image: url(tetris.png);
+			color: black;
+			cursor: pointer;
+			text-shadow:   -1px -1px 0 #000,  
+    		1px -1px 0 #000,
+    		-1px 1px 0 #000,
+    		1px 1px 0 #000,
+     		1px 1px 2px #141414,
+     		1px 1px 3px #141414,
+     		1px 1px 5px #141414,
+     		1px 1px 7px #141414,
+     		1px 1px 10px #141414,
+     		1px 1px 12px #141414,
+     		1px 1px 18px #141414;color:#D174E1;
+		}
+		IMG.Capu {
+    		display: block;
+   			 margin-left: auto;
+   			 margin-right: auto;
+   			 cursor: wait;
+   		}
+	</style>
+</head>
+<body>
+	<header>
+	        <a href="index.html"><img id="logo" src="snake.gif"></a>
+	        <a id="page" href="games.html">SNAKE</a>
+	        <a id="page" href="easteregg.html">EASTER EGG</a>
+	        <a id="page" href="portfolio.html">QUI SOMMES NOUS?</a>
+	        <a id="page" href="pingpong.html">PINGPONG IMPOSSIBLE</a>
+	        <a id="page" href="nouscontacter.html">NOUS CONTACTER</a>
+      </header>
+	<h1>Bienvenue c'est nous !</h1>
+	<p id="p1">Nous sommes l'équipe qui se cache derrière ce projet ludique et amusant. Une équipe 100 % féminine nostalgique de ces jeux qui ont fait jouer la planète entière et nous espérons que cela vous ramènera en enfance le temps d'un instant. PS : J'espère que vous n'êtes pas epileptique!</p>
+	<h2>Les Membres de l'équipe :</h2>
+	<section>
+		<div>
+			<h3>PacGugu</h3>
+			<p id="gul">Elle adore les cerises et croit aux fantômes, c'est notre PacGugu à nous : <strong>Gul-Vahide YILMAZ</strong>. Fan de PacMan depuis l'enfance, c'était son idée de vous faire jouer. Ses mains de génie ont été actives tout au long de ce projet en apportant la GulTouch à chaque étape. Mais son art a été prouvé quand elle a créée le premier jeu de notre site : <strong>le SNAKE</strong> ainsi que la mise en page de notre <strong>page index</strong> et de la partie <strong>Easter Egg</strong>.</p>
+			<img class="Gugu" 
+    			src="Photo_gugu.jpg" 
+    			alt="Image de Gul"
+    			height="130px" 
+   				width="130px" 
+			/>
+		</div>
+		<div>
+			<h4>EliSNAKE</h4>
+			<p id="elisa">Qui ne s'est jamais mangé sa propre queue lorsqu'il jouait au Snake? <strong>Elisa-Souad GOULAHSEN</strong> a voulu vous rappeler tous ces moments en vous racontant <strong>l'histoire de ce jeu</strong> qui a fait jouer des générations entières alors que nos mamans nous appelait à table depuis 10 minutes. Vous retrouverez son histoire dans l'onglet Snake sur la page index.</p>
+			<img class="Elisa" 
+    			src="Photo_elisa.jpg" 
+    			alt="Image de Elisa"
+    			height="150px" 
+   				width="130px" 
+			/>
+		</div>
+		<div>
+			<h5>CaPEACHine</h5>
+			<p id="capu">Notre princesse <strong>Capucine GRANDCLAUDE</strong> avait à coeur que vous puissiez rager sur un jeu récent mais mythique : <strong>Flappy Bird</strong>. Elle a vaincu sa phobie des oiseaux pour vous, alors à vous de jouer ! Elle est aussi responsable de notre <strong>Ping-Pong</strong> presque impossible mais son petit frère a prouvé qu'il était possible de marquer quelques points avec de la détermination (Virgile : "et du talent aussi!").</p>
+ 			<img class="Capu" 
+    			src="Photo_capu.jpg" 
+    			alt="Image de Capucine"
+    			height="130px" 
+   				width="130px" 
+			/>
+ 		</div>
+ 		
+
+	</section>
+
+
+</body>
+</html>

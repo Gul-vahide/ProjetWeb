@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Snake Game</title>
+        <h2></h2>
+        <style>
+            *
+            {
+            box-sizing: border-box;
+            font-family:Chalkduster;
+            }
+            h1{
+                text-align: center;
+                font-family:Chalkduster;
+                color: #cc0000
+                background: #ece9e9;
+                text-shadow: 3px 5px 2px #474747;
+            }
+            body{
+                background-image: url('baaack.png');
+                height: 400px;
+            }
+            canvas{
+                display: block;
+                margin: 0 auto;
+            }
+            header
+            {
+              top : 0;
+                width: 100%;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-around;
+                background: -webkit-linear-gradient(top, rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(41,137,216,1) 50%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%);
+                padding:  5px;
+                right: 0;
+                align-items: center;
+                z-index:2;
+            }
+            header a
+            {
+                float: left;
+                color: black;
+                text-align: center;
+                text-shadow: 9px -5px 4px rgba(53, 83, 136, 1);
+                padding: 12px;
+                text-decoration: none;
+                font-size: 18px;
+                line-height: 25px;
+                border-radius: 10px;
+            }
+            header a.logo
+            {
+                float:left;
+                padding:0;
+            }
+
+
+            header a#page:hover
+            {
+              background-color: #ddd;
+            }
+
+
+            header a.active
+            {
+              background: linear-gradient(to right, orange, rgb(0, 162, 255));
+              color: green;
+            }
+            #logo
+            {
+              height:60px;
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img id="logo" src="snake.gif"></a>
+            <a id="page" href="games.html">SNAKE</a>
+            <a id="page" href="easteregg.html">EASTER EGG</a>
+            <a id="page" href="portfolio.html">QUI SOMMES NOUS?</a>
+            <a id="page" href="jouer.html">A VOUS DE JOUER</a>
+            <a id="page" href="nouscontacter.html">NOUS CONTACTER</a>
+      </header>
+    </body>
+    <canvas id="snake" width="608" height="608"></canvas>
+    <script src="snake.js"></script>
+</html>
