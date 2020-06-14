@@ -1,0 +1,75 @@
+body
+{
+	background-color: #F5FFBA;
+
+}
+
+h1
+{
+	font-size: xxx-large;
+}
+h1,h2
+{
+	font-family: impact;
+	color : #0D7425;
+	text-align: center;
+}
+
+
+p
+{
+	font-family: DejaVu Sans Mono;
+	color: #252825;
+	padding: 10px 50px 20px;
+	
+	
+}
+
+.legende
+{
+	text-align: center;
+	font-size: small;
+	color: #444844;
+	font-style: italic;
+}
+
+IMG.snake
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	align-content: center;
+	border : 10px solid #2F3D2D;
+}
+
+.video
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+IMG.nokia
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	align-content: center;
+	border : 10px solid #2F3D2D;
+}
+
+.serpent
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	align-content: center;
+}
+
+.p1
+{
+	font-family: impact;
+	color: #0D7425;
+	text-align: center;
+
+
